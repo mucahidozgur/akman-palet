@@ -1,0 +1,6 @@
+node_modules/
+dist/
+*.log
+
+# Kökteki muhtemel logo dosyası — yayınlanmasına karar verilene kadar hariç
+/5811896693971161286.jpg

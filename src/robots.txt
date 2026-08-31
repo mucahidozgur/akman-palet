@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# DEĞİŞTİR: Site yayına alındığında aşağıdaki alan adını kendi adresinizle güncelleyin
+Sitemap: https://www.akmanpalet.com/sitemap.xml
