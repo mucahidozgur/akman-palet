@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>İletişim | Akman Palet — Teklif Alın, Bize Ulaşın</title>
-  <meta name="description" content="Akman Palet iletişim: telefon, e-posta, adres ve çalışma saatleri. Ankara'da palet ve kereste için hemen teklif formunu doldurun veya WhatsApp'tan yazın.">
+  <title>İletişim | Akman Palet — Bize Ulaşın</title>
+  <meta name="description" content="Akman Palet iletişim: telefon, e-posta, adres ve çalışma saatleri. Ankara'da palet ve kereste ihtiyaçlarınız için bizi arayın veya WhatsApp'tan yazın.">
   <meta name="keywords" content="akman palet iletişim, palet teklif, palet fiyat, ankara palet telefon, palet sipariş">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#5D4037">
@@ -12,7 +12,7 @@
   <meta property="og:locale" content="tr_TR">
   <meta property="og:site_name" content="Akman Palet">
   <meta property="og:title" content="İletişim | Akman Palet">
-  <meta property="og:description" content="Palet ve kereste ihtiyaçlarınız için hemen teklif alın.">
+  <meta property="og:description" content="Palet ve kereste ihtiyaçlarınız için bizi arayın.">
   <meta property="og:image" content="https://www.akmanpalet.com/assets/img/hero.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
@@ -46,7 +46,6 @@
         <svg class="h-4 w-4 text-cta-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.6 2z"/></svg>
         0536&nbsp;395&nbsp;56&nbsp;73
       </a>
-      <a href="iletisim.html#teklif-formu" class="btn btn-cta">Teklif Al</a>
     </div>
 
     <button id="menu-btn" type="button" class="inline-flex h-11 w-11 items-center justify-center rounded-lg border border-wood-200 bg-white text-wood-800 lg:hidden" aria-expanded="false" aria-controls="mobil-menu">
@@ -66,8 +65,7 @@
       <a href="iletisim.html" class="rounded-lg px-3 py-3 font-semibold text-wood-800 bg-wood-100" aria-current="page">İletişim</a>
       <div class="mt-4 flex flex-col gap-3 border-t border-wood-200/60 pt-4">
                 <a href="tel:+905363955673" class="btn btn-outline">0536&nbsp;395&nbsp;56&nbsp;73</a>
-        <a href="iletisim.html#teklif-formu" class="btn btn-cta">Hemen Teklif Al</a>
-      </div>
+              </div>
     </nav>
   </div>
 </header>
@@ -120,49 +118,20 @@
     </div>
   </section>
 
-  <!-- ==================== FORM + HARİTA ==================== -->
-  <section class="bg-wood-50 py-16 lg:py-20" id="teklif-formu">
-    <div class="container-site grid gap-10 lg:grid-cols-2">
-      <!-- Form -->
-      <div class="card p-6 sm:p-8" data-reveal>
-        <h2 class="text-2xl font-bold">Teklif Formu</h2>
-        <p class="mt-2 text-sm text-ink/70">Formu doldurun; ölçü, adet ve teslimat bilgilerinizle birlikte aynı gün size dönüş yapalım.</p>
-        <!-- DEĞİŞTİR: Formspree form kimliğinizi girin (https://formspree.io adresinden ücretsiz alınır).
-             Netlify'da yayınlıyorsanız: <form name="teklif" method="POST" data-netlify="true"> kullanın. -->
-        <form class="mt-6 space-y-5" action="https://formspree.io/f/FORM_KIMLIGINIZ" method="POST" data-iletisim novalidate>
-          <div class="grid gap-5 sm:grid-cols-2">
-            <div>
-              <label class="form-label" for="ad">Adınız Soyadınız *</label>
-              <input class="form-input" type="text" id="ad" name="ad" required autocomplete="name" placeholder="Adınız Soyadınız">
-              <p class="form-error" id="hata-ad" hidden></p>
-            </div>
-            <div>
-              <label class="form-label" for="telefon">Telefon *</label>
-              <input class="form-input" type="tel" id="telefon" name="telefon" required autocomplete="tel" placeholder="0536 395 56 73">
-              <p class="form-error" id="hata-telefon" hidden></p>
-            </div>
-          </div>
-          <div>
-            <label class="form-label" for="eposta">E-posta *</label>
-            <input class="form-input" type="email" id="eposta" name="eposta" required autocomplete="email" placeholder="ornek@firma.com">
-            <p class="form-error" id="hata-eposta" hidden></p>
-          </div>
-          <div>
-            <label class="form-label" for="mesaj">Mesajınız *</label>
-            <textarea class="form-input min-h-36 resize-y" id="mesaj" name="mesaj" required placeholder="Palet ölçüsü, adet, teslimat bölgesi ve diğer detayları yazın..."></textarea>
-            <p class="form-error" id="hata-mesaj" hidden></p>
-          </div>
-          <div class="form-durum" hidden aria-live="polite"></div>
-          <button type="submit" class="btn btn-cta w-full">Teklif Gönder</button>
-          <p class="text-xs leading-relaxed text-ink/50">Bilgileriniz yalnızca talebinizi yanıtlamak için kullanılır, üçüncü kişilerle paylaşılmaz.</p>
-        </form>
+  <!-- ==================== KONUM + HARİTA ==================== -->
+  <section class="bg-wood-50 py-16 lg:py-20" id="konum">
+    <div class="container-site max-w-4xl">
+      <div class="mx-auto max-w-2xl text-center" data-reveal>
+        <p class="section-eyebrow">Konum</p>
+        <h2 class="section-title mt-4">Bizi Ziyaret Edin</h2>
+        <p class="mt-4 leading-relaxed text-ink/70">Atölyemiz Gimat'ta; telefon, e-posta veya WhatsApp üzerinden bize ulaşabilir, dilerseniz yol tarifi alıp ziyaret edebilirsiniz.</p>
       </div>
 
-      <!-- Harita + WhatsApp -->
+            <!-- Harita + WhatsApp -->
       <div class="flex flex-col gap-6" data-reveal>
         <div class="card overflow-hidden">
           <iframe
-            src="https://www.google.com/maps?q=39.9560366,32.7633289&z=16&output=embed"
+            src="https://www.google.com/maps?q=Tepe+Palet+Gimat+Macun+Yenimahalle+Ankara&output=embed"
             class="h-80 w-full border-0 lg:h-[420px]"
             title="Akman Palet konumu — Google Haritalar"
             loading="lazy"

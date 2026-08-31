@@ -35,10 +35,10 @@ Güncel iletişim bilgileri zaten girildi: telefon **0536 395 56 73**, adres
 yorumlarıyla işaretlidir — editörünüzde `DEĞİŞTİR` araması yaparak bulun:
 
 1. **E-posta** — `info@akmanpalet.com` (tüm sayfalarda; gerçek e-postanızla değiştirin)
-2. **İletişim formu (Formspree)** — https://formspree.io adresinden ücretsiz hesap
-   açın, form kimliğini `src/iletisim.html` içindeki `action` değerine yazın
-   (`https://formspree.io/f/FORM_KIMLIGINIZ` → kendi kimliğiniz). Kimlik girilmediği
-   sürece form "henüz bağlanmadı" uyarısı gösterir.
+2. **İletişim formu** — Şu an kaldırılmış durumda; tüm "Teklif Al" butonları telefon
+   aramasına, "Özel Ölçü Teklif Al" butonu WhatsApp'a yönlendiriyor. İleride form
+   eklenecekse: https://formspree.io adresinden ücretsiz hesap açıp formu
+   `src/iletisim.html` içine ekleyin ve kimliği `action` değerine yazın.
 3. **Alan adı** — `src/sitemap.xml` ve `src/robots.txt` içindeki
    `www.akmanpalet.com` placeholder'ını gerçek alan adınızla değiştirin.
 
@@ -61,10 +61,10 @@ Veya web üzerinden: github.com/new → boş repo oluşturun → `git remote add
 | `urunler.html` | Ölçü tablosu, ürün kartları, sandık/kasa, galeri |
 | `hakkimizda.html` | Firma tanıtımı, üretim süreci, kalite politikası |
 | `sss.html` | 8 soru-cevap (akordeon) |
-| `iletisim.html` | Teklif formu, harita (Gimat adresi), iletişim kartları |
+| `iletisim.html` | İletişim kartları, harita (Gimat adresi), WhatsApp |
 
-Not: Ana sayfadaki "Hızlı Teklif Formu" kaldırıldı; yalnızca İletişim sayfasındaki
-form kullanılıyor. "Özel Ölçü Teklif Al" butonu doğrudan WhatsApp'a yönlendirir.
+Not: Teklif formları şimdilik kaldırıldı. Tüm "Teklif Al" butonları telefon
+aramasına, "Özel Ölçü Teklif Al" butonu doğrudan WhatsApp'a yönlendirir.
 
 ## Kalite Kontrolleri
 
