@@ -1,6 +1,7 @@
 /* ============================================================
    Akman Palet — Tasarım Sistemi (Tailwind CSS v4)
-   Renk paleti: ahşap kahverengileri, altın, krem zemin, CTA turuncu
+   Renk paleti: logo renkleri (beyaz zemin, siyaha yakın koyu gri,
+   marka kırmızısı #C80808 / #D2030D)
    ============================================================ */
 
 @import "tailwindcss";
@@ -13,38 +14,35 @@
   --font-display: "Montserrat", ui-sans-serif, system-ui, -apple-system, sans-serif;
   --font-body: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
 
-  /* --- Ahşap (kahverengi) --- */
-  --color-wood-50: #faf5f0;
-  --color-wood-100: #f0e5da;
-  --color-wood-200: #e3cdbb;
-  --color-wood-300: #cfae93;
-  --color-wood-400: #b98a66;
-  --color-wood-500: #a06b45;
-  --color-wood-600: #83502f;
-  --color-wood-700: #5d4037; /* ana marka rengi */
-  --color-wood-800: #4e342e;
-  --color-wood-900: #3e2723;
-  --color-wood-950: #2b1a14;
+  /* --- Marka kırmızısı (logodan alındı) --- */
+  --color-marka-50: #fef3f3;
+  --color-marka-100: #fde3e3;
+  --color-marka-200: #fbc7c7;
+  --color-marka-300: #f79c9c;
+  --color-marka-400: #f06464;
+  --color-marka-500: #d2030d; /* logodaki en doygun kırmızı */
+  --color-marka-600: #c80808; /* ana marka rengi */
+  --color-marka-700: #a30a0a;
+  --color-marka-800: #820d0d;
+  --color-marka-900: #5f0c0c;
+  --color-marka-950: #3d0505;
 
-  /* --- Altın / açık kahve --- */
-  --color-gold-100: #f7ead3;
-  --color-gold-200: #efd9b4;
-  --color-gold-300: #e8c48c;
-  --color-gold-400: #d7a86e;
-  --color-gold-500: #c49a6c;
-  --color-gold-600: #a97e4f;
-
-  /* --- CTA turuncu --- */
-  --color-cta-50: #fef0e7;
-  --color-cta-100: #fdddc4;
-  --color-cta-200: #fbc297;
-  --color-cta-500: #e65100;
-  --color-cta-600: #c04300;
-  --color-cta-700: #9a3600;
+  /* --- Koyu gri tonları (logodaki siyahımsı metin ~#1A1A1A) --- */
+  --color-gri-50: #f7f7f7;
+  --color-gri-100: #ececec;
+  --color-gri-200: #dedede;
+  --color-gri-300: #c4c4c4;
+  --color-gri-400: #9a9a9a;
+  --color-gri-500: #737373;
+  --color-gri-600: #4f4f4f;
+  --color-gri-700: #3a3a3a;
+  --color-gri-800: #262626;
+  --color-gri-900: #1a1a1a;
+  --color-gri-950: #101010;
 
   /* --- Zemin ve metin --- */
-  --color-cream: #f5f0eb;
-  --color-ink: #333333;
+  --color-zemin: #ffffff;
+  --color-ink: #1a1a1a;
 }
 
 /* ============ Temel katman ============ */
@@ -54,7 +52,7 @@
   }
 
   body {
-    background-color: var(--color-cream);
+    background-color: var(--color-zemin);
     color: var(--color-ink);
     font-family: var(--font-body);
     -webkit-font-smoothing: antialiased;
@@ -62,12 +60,12 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
-    color: var(--color-wood-800);
+    color: var(--color-gri-900);
   }
 
   ::selection {
-    background-color: var(--color-wood-700);
-    color: var(--color-cream);
+    background-color: var(--color-marka-600);
+    color: #fff;
   }
 
   /* Yapışkan header altında çapa hedeflerinin kaymaması için */
@@ -101,33 +99,33 @@
     transition: background-color 150ms ease, border-color 150ms ease, color 150ms ease;
   }
   .btn:focus-visible {
-    outline: 2px solid var(--color-cta-500);
+    outline: 2px solid var(--color-marka-600);
     outline-offset: 2px;
   }
   .btn-primary {
-    background-color: var(--color-wood-700);
+    background-color: var(--color-marka-600);
     color: #fff;
   }
-  .btn-primary:hover { background-color: var(--color-wood-800); }
+  .btn-primary:hover { background-color: var(--color-marka-700); }
   .btn-cta {
-    background-color: var(--color-cta-500);
+    background-color: var(--color-marka-600);
     color: #fff;
   }
-  .btn-cta:hover { background-color: var(--color-cta-600); }
+  .btn-cta:hover { background-color: var(--color-marka-700); }
   .btn-outline {
-    border: 1px solid var(--color-wood-300);
+    border: 1px solid var(--color-gri-300);
     background-color: #fff;
-    color: var(--color-wood-800);
+    color: var(--color-gri-900);
   }
   .btn-outline:hover {
-    border-color: var(--color-wood-500);
-    background-color: var(--color-wood-50);
+    border-color: var(--color-gri-500);
+    background-color: var(--color-gri-50);
   }
   .btn-light {
     background-color: #fff;
-    color: var(--color-wood-800);
+    color: var(--color-gri-900);
   }
-  .btn-light:hover { background-color: var(--color-gold-100); }
+  .btn-light:hover { background-color: var(--color-gri-100); }
   .btn-whatsapp {
     background-color: #25d366;
     color: #fff;
@@ -137,16 +135,16 @@
   /* --- Kartlar --- */
   .card {
     border-radius: 0.875rem;
-    border: 1px solid color-mix(in srgb, var(--color-wood-200) 70%, transparent);
+    border: 1px solid color-mix(in srgb, var(--color-gri-200) 70%, transparent);
     background-color: #fff;
-    box-shadow: 0 1px 2px rgb(62 39 35 / 0.06);
+    box-shadow: 0 1px 2px rgb(16 16 16 / 0.06);
   }
   .card-hover {
     transition: transform 200ms ease, box-shadow 200ms ease;
   }
   .card-hover:hover {
     transform: translateY(-4px);
-    box-shadow: 0 10px 24px rgb(62 39 35 / 0.12);
+    box-shadow: 0 10px 24px rgb(16 16 16 / 0.12);
   }
 
   /* --- Bölüm başlıkları --- */
@@ -155,13 +153,13 @@
     align-items: center;
     gap: 0.5rem;
     border-radius: 9999px;
-    background-color: var(--color-wood-100);
+    background-color: var(--color-marka-50);
     padding: 0.3rem 0.9rem;
     font-size: 0.8rem;
     font-weight: 600;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: var(--color-wood-700);
+    color: var(--color-marka-700);
   }
   .section-title {
     font-size: 1.875rem;
@@ -176,23 +174,23 @@
     margin-bottom: 0.375rem;
     font-size: 0.875rem;
     font-weight: 600;
-    color: var(--color-wood-800);
+    color: var(--color-gri-900);
   }
   .form-input {
     width: 100%;
     border-radius: 0.625rem;
-    border: 1px solid var(--color-wood-200);
+    border: 1px solid var(--color-gri-200);
     background-color: #fff;
     padding: 0.625rem 0.875rem;
     font-size: 0.9375rem;
     color: var(--color-ink);
     transition: border-color 150ms ease, box-shadow 150ms ease;
   }
-  .form-input::placeholder { color: #9c8a7c; }
+  .form-input::placeholder { color: var(--color-gri-400); }
   .form-input:focus {
     outline: none;
-    border-color: var(--color-wood-500);
-    box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-gold-400) 35%, transparent);
+    border-color: var(--color-gri-500);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-marka-400) 35%, transparent);
   }
   .form-input[aria-invalid="true"] {
     border-color: #dc2626;
@@ -232,7 +230,7 @@
     html { scroll-behavior: auto; }
   }
 
-  /* --- Ahşap doku dokunuşu (ince çizgi deseni) --- */
+  /* --- İnce çizgi deseni (koyu bölümlerde doku) --- */
   .wood-lines {
     background-image: repeating-linear-gradient(
       -45deg,
@@ -262,21 +260,21 @@
     padding: 0.5rem 0.875rem;
     font-size: 0.9rem;
     font-weight: 600;
-    color: var(--color-wood-800);
+    color: var(--color-gri-700);
     transition: background-color 150ms ease, color 150ms ease;
   }
   .nav-link:hover {
-    background-color: var(--color-wood-100);
-    color: var(--color-wood-950);
+    background-color: var(--color-gri-100);
+    color: var(--color-gri-950);
   }
   .nav-link[aria-current="page"] {
-    background-color: var(--color-wood-700);
+    background-color: var(--color-marka-600);
     color: #fff;
   }
 
   /* --- Header kaydırma durumu --- */
   .header-kaydirildi {
-    box-shadow: 0 4px 16px rgb(43 26 20 / 0.12);
+    box-shadow: 0 4px 16px rgb(16 16 16 / 0.12);
   }
 
   /* --- Form durum mesajları --- */
