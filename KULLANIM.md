@@ -30,7 +30,7 @@ Manuel yükleme isterseniz: `dist/` klasörünün tamamını herhangi bir hostin
 ## Yapılacak Değişiklikler (kontrol listesi)
 
 Güncel iletişim bilgileri zaten girildi: telefon **0536 395 56 73**, adres
-**Macun, Gimat No:18, 06374 Yenimahalle / Ankara**, çalışma saatleri
+**Tuna İş Merkezi GİMAT Yenimahalle/Ankara**, çalışma saatleri
 **Pzt–Cmt 08:00 – 18:00**. Hâlâ değiştirilmesi gerekenler `<!-- DEĞİŞTİR: ... -->`
 yorumlarıyla işaretlidir — editörünüzde `DEĞİŞTİR` araması yaparak bulun:
 
