@@ -16,9 +16,6 @@ const HEDEFLER = [
   { dosya: "hizmet-sandik",           id: "8dvTZPVEJWk", genislik: 800 },
   { dosya: "hizmet-kereste",          id: "i82TImeGrDU", genislik: 800 },
   { dosya: "hizmet-ikinci-el-kereste", id: "UuX-Le3bfzc", genislik: 800 },
-  { dosya: "atolye-1",                id: "PxlKOcj0a3Q", genislik: 1000 },
-  { dosya: "atolye-2",                id: "hdW4rZPHe2g", genislik: 1000 },
-  { dosya: "atolye-3",                id: "5bjzV3g0ZJc", genislik: 1000 },
   { dosya: "kereste-detay",           id: "bBKVrH0vzB4", genislik: 800 },
 ];
 
